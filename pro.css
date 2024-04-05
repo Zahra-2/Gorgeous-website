@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  font-size: 20px;
+}
+.container {
+    width: 100%;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/831/767/820/lime-green-color-background-wallpaper-preview.jpg"); 
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+ul{
+  list-style-type: none;
+  overflow: visible;
+  border-radius: 5px;
+  text-align: center;
+}
+li{
+  display: inline;
+}
+li a{
+  display: inline-flex;
+  color: @000;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+nav{
+  display: block;
+  min-width: 60px;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  grid-row-gap: 20px;
+}
+nav a{
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #ffffff;
+  transition: 0.3s;
+}
+a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background-color: #F6BBE9;
+  bottom: -7px;
+  transition: 0.3s;
+}
+a:hover {
+  color: #F6BBE9;
+}
+a:hover:before{
+  width: 100%;
+}
+img{
+  width: 250px;
+  height: 300px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+h1{
+  text-align: center;
+  text-decoration-color: green;
+  text-transform: uppercase;
+  color: #fbbbed;
+  font-size: 35px;
+}
+ .button-container {
+       position: absolute; 
+  right: 700px;
+  top: 600px;
+    }
+.button {
+    display: flex;
+    overflow: visible;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 200px; /* Set your desired width */
+    height: 50px; /* Set your desired height */
+    background-color: #72966F; /* Set your desired background color */
+    color: white; /* Set text color */
+    font-size: 16px; /* Set font size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Add cursor pointer on hover */
+
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+{
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
